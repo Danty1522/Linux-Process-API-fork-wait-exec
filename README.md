@@ -25,6 +25,7 @@ Test the C Program for the desired output.
 
 
 ## C Program to create new process using Linux API system calls fork() and getpid() , getppid() and to print process ID and parent Process ID using Linux API system calls
+```c
 #include <stdio.h>
 #include <sys/types.h>
 #include <unistd.h>
@@ -41,13 +42,14 @@ printf("I am parent, my pid is %d\n",getpid());
 sleep(100); 
 exit(0);} 
 }
-
+```
 ##OUTPUT
 ![image](https://github.com/user-attachments/assets/4b9931d2-0534-40ad-80ef-39c711f72710)
 
 
 
 ## C Program to execute Linux system commands using Linux API system calls exec() , exit() , wait() family
+```c
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
@@ -72,6 +74,7 @@ printf("Running ps with execlp. Now with path specified\n");
                 puts("child did not exit successfully\n");
         printf("Done.\n");
         exit(0);}
+```
 
 
 
